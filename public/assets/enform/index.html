@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" href="images/favicon.jpg"  height="auto" >
+    <title>Follow up CASE</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body class="text-center d-flex flex-column vh-100">
+    <nav class="nav nav-masthead navbar navbar-expand-lg sticky-top navbar-back">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">
+            <img src="images/logo2.png" alt="Bootstrap" width="90" height="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="index.html"><i class="icon-home-1"></i>Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="registrationform.html">Register Your Case</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="searchcase.html">Follow your Case</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container">
+      <div class="col-12 mt-5">
+        <h1>Welcome To AJSC CASE Registration Form</h1>
+        <p class="lead">Please submit your application if you are facing any kind of thread from goverment, <br>local malitia and other responsible authorities. to submit your Case please click regiter now button.
+        <div class="col-sm-12 d-flex justify-content-center mt-4">
+          <button class="square-button px-5"><a href="registrationform.html">Register Now <i class="icon-right"></i></a></button>
+        </div>
+      </div>
+    </div>
+      <!-- footer -->
+      <section class="footersec footer mt-auto py-3">
+         <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center">
+               <div class="col-md-4 d-flex align-items-center">
+                  <span class="mb-3 mb-md-0 text-muted">© 2023 AJSC all right reserved</span>
+               </div>
+               <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                  <span class="mb-3 mb-md-0 text-muted">Powerd by: AJSC</span>
+               </div>
+            </footer>
+         </div>
+      </section>
+    <!-- Js -->
+    <script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+  
+
+  $('.nav-link').click(function(e) {
+    e.preventDefault();
+    $('.nav-link').removeClass('active');
+    $(this).addClass('active');
+  });
+});
+  </script>
+</body>
+</html>

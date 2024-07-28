@@ -1,0 +1,156 @@
+{
+    "home": "DASHBOARD",
+    "zone": "Zones",
+    "provinces": "Provinces",
+    "ditricts": "Districts",
+    "violences": "Violences",
+    "perpetrators": "Perpetrators",
+    "medias": "Media",
+    "complaints": "Complaints",
+    "occupations": "Occupations",
+    "cases": "CASE REGISTRATION",
+    "caseReports": "Case Registration",
+    "caseSummary": "CASE RESULT",
+    "users": "Users",
+    "title": "DATA MAPPING",
+
+    "createOccupation": "Add Occupation",
+    "editOccupation": "Edit Occupation",
+
+    "createComplaint": "Add Complaint",
+    "editComplaint": "Edit Complaint",
+
+    "createSummary": "Add Summary",
+    "editSummary": "Edit Summary",
+
+    "createCases": "Add Case",
+    "editCases": "Edit Case",
+    "showCases": "Details",
+
+    "address": "Address",
+    "caseTypes": "Case Types",
+
+    "createMedia": "Add Media",
+    "editMedia": "Edit Media",
+
+    "createPerpetrator": "Add Perpetrator",
+    "editPerpetrator": "Edit Perpetrator",
+
+    "createViolence": "Add Violence",
+    "editViolence": "Edit Violence",
+
+    "createDistrict": "Add District",
+    "editDistrict": "Edit District",
+
+    "createProvince": "Add Province",
+    "editProvince": "Edit Province",
+
+    "createZone": "Add Zone",
+    "editZone": "Edit Zone",
+
+
+    "save": "Save",
+    "update": "Update",
+    "show": "Show Case",
+    "reset": "Reset",
+    "export": "Export",
+    "advancedSearch": "Advance Search",
+    "search": "Search",
+
+
+
+    "newusers": "Create User",
+    "uedit": "Edit User",
+    "uname": "Name",
+    "ujob": "Job",
+    "usertype": "User Type",
+    "uprovince": "Province",
+    "uemail": "Email",
+    "ustatus": "Status",
+    "uroles": "Roles",
+    "uactions": "Actions",
+
+
+
+    "oldCase": "Previous Case",
+    "name_dr": "Name DR",
+    "name_ps": "Name PSH",
+    "name_en": "Name EN",
+
+    "name": "Name",
+    "phone": "Mobile",
+    "email": "Email",
+    "date": "Date",
+    "status": "Status",
+    "description": "Description",
+    "file": "Attachment",
+
+    "summary": "Summary",
+    "pursuit": "Pursuit",
+    "shortSummary": "Short Summary",
+    "effectedDate": "Effected Date",
+
+    "fromDate": "From Date",
+    "toDate": "To Date",
+
+    "code": "ID",
+    "ZoneDr": "Zone DR",
+    "zoneps": "Zone PSH",
+    "zone_en": "Zone EN",
+
+
+    "complaintGraph": "Complaint Graph",
+    "violenceGraph": "Violence Graph",
+    "provinceGraph": "Provice Graph",
+
+    "paktya": "PAKTYA",
+    "wardak": "Wardak",
+    "samangan": "Samangan",
+    "parwan": "PARWAN",
+    "logar": "LOGAR",
+    "laghman": "LAGHMAN",
+    "panjsher": "PANJSHER",
+    "kapisa": "KAPISA",
+    "kabul": "KABUL",
+    "baghlan": "BAGHLAN",
+    "takhar": "TAKHAR",
+    "nangarhar": "NANGARHAR",
+    "kunduz": "KUNDUZ",
+    "kunar": "KUNAR",
+    "nuristan": "NURISTAN",
+    "badakhshan": "BADAKHSHAN",
+    "paktika": "PAKTIKA",
+    "khost": "KHOST",
+    "ghazni": "GHAZNI",
+    "zabul": "ZABUL",
+    "kandahar": "KANDAHAR",
+    "daykundi": "DAYKUNDI",
+    "uruzgan": "URUZGAN",
+    "nimroz": "NIMROZ",
+    "helmand": "HELMAND",
+    "farah": "FARAH",
+    "sarepul": "SAR-E-PUL",
+    "ghor": "GHOR",
+    "jawzjan": "JAWZJAN",
+    "faryab": "FARYAB",
+    "balkh": "BALKH",
+    "bamyan": "BAMYAN",
+    "herat": "HERAT",
+    "badghis": "BADGHIS",
+
+
+
+    "typeOfViolence": "TYPE OF VIOLENCE",
+    "typeOfPerpetrators": "PERPETRATORS",
+    "recordTable": "RECORDS TABLE",
+
+    "total_case": "Total Cases",
+
+
+    "caseCode": "Case Code",
+
+
+    "allYear": "Year: All",
+    "view": "View"
+
+}

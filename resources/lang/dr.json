@@ -1,0 +1,147 @@
+{
+    "home": "صفحه عمومی",
+    "zone": "زون ها",
+    "provinces": "ولایات",
+    "districts": "ولسوالی ها",
+    "violences": "خشونت",
+    "perpetrators": "عاملان",
+    "medias": "میدیا",
+    "complaints": "شکایات",
+    "occupations": "وطایف",
+    "cases": "قضایا",
+    "caseReports": "ثبت قضیه",
+    "caseSummary": "نتیجه قضایا",
+    "users": "کاربران",
+
+
+    "createOccupation": "ایجاد وظیفه",
+    "editOccupation": "تصحیح وظیفه",
+
+
+    "createCases": "ایجاد قضیه",
+    "editCases": "تصحیح قضیه",
+
+    "createMedia": "ایجاد میدیا",
+    "editMedia": "تصحیح میدیا",
+
+    "createPerpetrator": "ایجاد عاملان",
+    "editPerpetrator": "تصحیح عاملان",
+
+    "createViolence": "ایجاد خشونت",
+    "editViolence": "تصحیح خشونت",
+
+    "createDistrict": "ایجاد ولسوالی",
+    "editDistrict": "تصحیح ولسوالی",
+
+    "createProvince": "ایجاد ولایت",
+    "editProvince": "تصحیح ولایت",
+
+    "createZone": "ایجاد زون",
+    "editZone": "تصحیح زون",
+
+
+    "save": "ثبت",
+    "update": "تصحیح",
+    "show": "نمایش",
+    "reset": "Reset",
+    "export": "Export",
+    "advancedSearch": "جستجوی پیشرفته",
+    "search": "جستجو",
+
+
+
+    "newusers": "ایجاد کاربر",
+    "uedit": "تصحیح کاربر",
+    "uname": "اسم",
+    "ujob": "وظیفه",
+    "usertype": "نوعیت کاربر",
+    "uprovince": "ولایت",
+    "uemail": "ایمیل",
+    "ustatus": "حالت",
+    "uroles": "دسترسی",
+    "uactions": "اختیارات",
+
+
+
+    "oldCase": "قضیه قبلی",
+    "name_dr": "نام",
+    "name_ps": "نوم",
+    "name_en": "Name",
+
+    "name": "اسم",
+    "phone": "شماره تماس",
+    "email": "ایمیل",
+    "date": "تاریخ",
+    "status": "حالت",
+    "description": "تشریحات",
+    "file": "فایل",
+
+    "summary": "خلاصه",
+    "pursuit": "دستیابی",
+    "shortSummary": "خلاصه کوتاه",
+    "effectedDate": "تاریخ",
+
+    "fromDate": "از تاریخ",
+    "toDate": "الی تاریخ",
+
+    "code": "کود",
+    "ZoneDr": "نام زون",
+    "zoneps": "زون نوم",
+    "zone_en": "Zone Name",
+
+
+    "complaintGraph": "گراف شکایات",
+    "violenceGraph": "گراف خشونت ها",
+    "provinceGraph": "گراف ولایات",
+
+
+    "paktya": "پکتیا",
+    "wardak": "وردک",
+    "samangan": "سمنگان",
+    "parwan": "پروان",
+    "logar": "لوگر",
+    "laghman": "لغمان",
+    "panjsher": "پنجشیر",
+    "kapisa": "کاپیسا",
+    "kabul": "کابل",
+    "baghlan": "بغلان",
+    "takhar": "تخار",
+    "nangarhar": "ننگرهار",
+    "kunduz": "کندز",
+    "kunar": "کنر",
+    "nuristan": "نورستان",
+    "badakhshan": "بدخشان",
+    "paktika": "پکتیکا",
+    "khost": "خوست",
+    "ghazni": "غزنی",
+    "zabul": "زابل",
+    "kandahar": "کندهار",
+    "daykundi": "دایکندی",
+    "uruzgan": "ارزگان",
+    "nimroz": "نیمروز",
+    "helmand": "هلمند",
+    "farah": "فراه",
+    "sarepul": "سرپل",
+    "ghor": "غور",
+    "jawzjan": "جوزجان",
+    "faryab": "فاریاب",
+    "balkh": "بلخ",
+    "bamyan": "بامیان",
+    "herat": "هرات",
+    "badghis": "بادغیس",
+
+
+    "typeOfViolence": "نوع خشونت",
+    "typeOfPerpetrators": "عاملین خشونت",
+    "recordTable": "جدول قضایای ثبت شده",
+
+    "total_case": " مجموعی قضایا",
+
+
+    "caseCode": "کود قضیه",
+
+
+    "allYear": "سال: همه",
+    "view": "دیدن"
+
+}

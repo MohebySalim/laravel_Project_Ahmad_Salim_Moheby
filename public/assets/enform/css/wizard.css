@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.box-con{
+    position: relative;
+    /* max-width: 900px; */
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-right: auto;
+    margin-left: auto;
+}
+.box-con header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+.box-con header::before{
+    content: "";
+    position: absolute;
+    right: auto;
+    left: auto;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #491219;
+}
+.box-con form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 600px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.box-con form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+
+.box-con form .form.forth{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+.box-con form .form.third{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+
+
+.box-con form .form.second{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+form.secActive .form.second{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+form.secActive .form.first{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+.box-con form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+.box-con form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input :focus,
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+/* input 4 */
+form .fields .input-field3{
+    display: flex;
+    width: calc(100% / 4 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field3 label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field3 input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field3 input :focus,
+.input-field3 select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field3 select,
+.input-field3 input[type="date"]{
+    color: #707070;
+}
+.input-field3 input[type="date"]:valid{
+    color: #333;
+}
+/* end */
+/* checkbox */
+form .fields .input-field-check{
+    display: flex;
+    width: calc(100% / 8 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+}
+.input-field-check label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field-check input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 30px;
+    margin: 8px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-field-check input :focus,
+.input-field-check select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field-check select,
+.input-field-check input[type="date"]{
+    color: #707070;
+}
+.input-field-check input[type="date"]:valid{
+    color: #333;
+}
+/* end check */
+/* textarea */
+form .fields .input-field-tarea{
+    display: flex;
+    width: calc(100% / 0 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field-tarea label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field-tarea input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 30px;
+    margin: 8px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-field-tarea input :focus,
+.input-field-tarea select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field-tarea select,
+.input-field-tarea input[type="date"]{
+    color: #707070;
+}
+.input-field-tarea input[type="date"]:valid{
+    color: #333;}
+/* end tarea */
+.box-con form button, .backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.box-con form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: #265df2;
+}
+form button i,
+form .backBtn i{
+    margin: 0 6px;
+}
+form .backBtn i{
+    transform: rotate(180deg);
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button , .backBtn{
+    margin-right: 14px;
+}
+
+@media (max-width: 750px) {
+    .box-con form{
+        overflow-y: scroll;
+    }
+    .box-con form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+    form .fields .input-field3{
+        width: calc(100% / 2 - 15px);
+    }
+    form .fields .input-field-check{
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+    form .fields .input-field3{
+        width: 100%;
+    }
+    form .fields .input-field-check{
+        width: calc(100% / 3 - 15px);
+    }
+}

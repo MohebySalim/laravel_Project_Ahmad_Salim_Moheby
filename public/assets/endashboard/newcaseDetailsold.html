@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<title>Case Application and Registration System (CARS)</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text">Case Application and Registration System (CARS)</h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li>
+					<a href="index2.html" class="">
+						<div class="parent-icon"><i class='bx bx-home-circle'></i>
+						</div>
+						<div class="menu-title">Dashboard</div>
+					</a>
+				</li>
+				<li>
+					<a href="newcaseDetails.html" class="">
+						<div class="parent-icon"><i class='bx bx-right-arrow-alt'></i>
+						</div>
+						<div class="menu-title">New Case Details</div>
+					</a>
+				</li>
+				<li>
+					<a href="searchcase.html" class="">
+						<div class="parent-icon"><i class='bx bx-right-arrow-alt'></i>
+						</div>
+						<div class="menu-title">Search case</div>
+					</a>
+				</li>
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+					<div class="search-bar flex-grow-1">
+						<div class="position-relative search-bar-box">
+							<input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
+							<span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
+						</div>
+					</div>
+					<div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center">
+							<li class="nav-item mobile-search-icon">
+								<a class="nav-link" href="#">	<i class='bx bx-search'></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+									<i class='bx bx-bell'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Notifications</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-notifications-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+												ago</span></h6>
+													<p class="msg-info">5 new user registered</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Notifications</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+									<i class='bx bx-comment'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Messages</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-message-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
+												ago</span></h6>
+													<p class="msg-info">The standard chunk of lorem</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Messages</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="user-box dropdown">
+						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+							<div class="user-info ps-3">
+								<p class="user-name mb-0">Ibadullah</p>
+								<p class="designattion mb-0">Web Designer</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
+							</li>
+							<li>
+								<div class="dropdown-divider mb-0"></div>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">Home</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+								</li>
+								<li class="breadcrumb-item active" aria-current="page">New Case</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				 <div class="card radius-10">
+					<div class="card-body">
+					   <div class="d-flex align-items-center">
+						   <div>
+							   <h6 class="mb-0">New Case</h6>
+						   </div>
+						   <div class="dropdown ms-auto">
+							   <a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class="bx bx-dots-horizontal-rounded font-22 text-option"></i>
+							   </a>
+							   <ul class="dropdown-menu">
+								   <li><a class="dropdown-item" href="javascript:;">Action</a>
+								   </li>
+								   <li><a class="dropdown-item" href="javascript:;">Another action</a>
+								   </li>
+								   <li>
+									   <hr class="dropdown-divider">
+								   </li>
+								   <li><a class="dropdown-item" href="javascript:;">Something else here</a>
+								   </li>
+							   </ul>
+						   </div>
+					   </div>
+					<div class="table-responsive">
+					  <table class="table align-middle mb-0 text-center">
+					   <thead class="table-light">
+						<tr>
+						  <th>#</th>
+						  <th>Name</th>
+						  <th>Gender</th>
+						  <th>Province</th>
+						  <th>Case Type</th>
+						  <th>Request from Committee</th>
+						</tr>
+						</thead>
+						<tbody>
+						  <tr>
+							 <td>1</td>
+							 <td>Ahmad</td>
+							 <td>Male</td>
+							 <td>Parwan</td>
+							 <td>Murder</td>
+							 <td>Request from committee</td>
+						  </tr>
+					   </tbody>
+					 </table>
+					 </div>
+					 <div class="detail-case p-4 mb-4">
+					 	<h5 class="text-danger">The Ministry of Interior Affairs should investigate the case of beating the reporter of Bakhtar Agency in Zabul.</h5>
+					 	<p><strong>Qalat:</strong> The Center of Afghan Journalists strongly condemns the beating of a Bakhtar News Agency reporter by a number of police forces in the city of Qalat, the capital of Zabul province, and calls on the Ministry of Interior Affairs to investigate this incident and show that the commission of such acts does not tolerate Anwarullah Anuri wrote on his Facebook page that yesterday, when he was trying to take a picture of the controversy caused by the police in Qalat city, he was severely beaten by the commander of the first security district of Qalat city and a number of soldiers who were with him, and they, the camera And they also took his mobile phone from him</p>
+					 </div>
+					</div>
+			   </div>
+			   <!-- Details -->
+			   <div class="card">
+					<div class="card-body">
+						<form action="" class="case-title">
+						<h5 class="card-title">New Case Discreption</h5>
+						<hr>
+						<div class="row">
+							<div class="col-md-2 mb-3">
+								<h6>Name of Victom</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<p>Ahmadullah From Parwan Province</p>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Case Discreption</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<textarea class="form-control" id="inputAddress" placeholder="Case Discreption" rows="2"></textarea>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Previous threats</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<textarea class="form-control" id="inputAddress" placeholder="Previous threats" rows="2"></textarea>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Supporting documents</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<p>Ahmadullah From Parwan Province</p>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Unofficial statements</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<textarea class="form-control" id="inputAddress" placeholder="Unofficial statements" rows="2"></textarea>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Committee Actions</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<textarea class="form-control" id="inputAddress" placeholder="Committee Actions" rows="2"></textarea>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Government actions</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<textarea class="form-control" id="inputAddress" placeholder="Government actions" rows="2"></textarea>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Actions of judicial institutions</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<textarea class="form-control" id="inputAddress" placeholder="Actions of judicial institutions" rows="2"></textarea>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Legal matters</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<textarea class="form-control" id="inputAddress" placeholder="Legal matters" rows="2"></textarea>
+							</div>
+							<div class="col-md-2 mb-3">
+								<h6>Conclusion of the case and its reasons</h6>
+							</div>
+							<div class="col-md-1 mb-3">
+								<div class="font-22 d-flex justify-content-center">	
+									<div class="order-actions">  
+										<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-9 mb-3">
+								<textarea class="form-control" id="inputAddress" placeholder="Conclusion of the case and its reasons" rows="2"></textarea>
+							</div>
+						</div>
+					 <div class="col justify-content-center d-flex m-4">
+						<button type="button" class="btn btn-primary px-5">Submit</button>
+					</div>
+					</form>
+					</div>
+				</div>
+			   <!-- Details -->
+			   <div class="card">
+					<div class="card-body">
+						<h5 class="card-title">New Case Details</h5>
+						<hr>
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingOne">
+								  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+								  	<div class="col-md-3">
+									<a href="javascript:;" class="list-group-item">
+										<div class="d-flex">
+											<div class="chat-user-online">
+												<img src="assets/images/avatars/avatar-2.png" class="rounded-circle" alt="" width="42" height="42">
+											</div>
+											<div class="flex-grow-1 ms-2">
+												<h6 class="mb-0 chat-title">Ibadullah</h6>
+												<p class="mb-0 chat-msg">Director of Committee</p>
+												<div class="chat-time">12/12/2022, 9:51 AM</div>
+											</div>
+											
+										</div>
+									</a>
+								</div>
+									<div class="col-md-5">
+										<label for="formFileMultiple" class="form-label text-muted">Case Discreption</label>
+										<p>The Ministry of Interior Affairs should investigate the case of beating the reporter of Bakhtar Agency in Zabul.</p>
+									</div>
+									<div class="col-md-3 text-center">
+										<div class="p-1">
+											<div class="d-flex justify-content-center order-actions">
+												<div class="hover-text">
+													<a href="#" class="btn-show ms-1"><i class="fadeIn animated bx bx-link-alt"></i></a>
+												</div> <a href="#" class="ms-1 btn-edit"><i class="fadeIn animated bx bx-edit"></i></a> <a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-trash-alt"></i></a>
+											</div>
+										</div>
+									</div>
+								  </button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+									<div class="accordion-body">
+										<div class="row case-title">
+											<div class="col-md-2 mb-3">
+												<h6>Name of Victom</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Case Discreption</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Previous threats</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Supporting documents</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Unofficial statements</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Committee Actions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Government actions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Actions of judicial institutions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Legal matters</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Conclusion of the case and its reasons</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingTwo">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+							<div class="col-md-3">
+									<a href="javascript:;" class="list-group-item">
+										<div class="d-flex">
+											<div class="chat-user-online">
+												<img src="assets/images/avatars/avatar-2.png" class="rounded-circle" alt="" width="42" height="42">
+											</div>
+											<div class="flex-grow-1 ms-2">
+												<h6 class="mb-0 chat-title">Ibadullah</h6>
+												<p class="mb-0 chat-msg">Director of Committee</p>
+												<div class="chat-time">12/12/2022, 9:51 AM</div>
+											</div>
+											
+										</div>
+									</a>
+								</div>
+									<div class="col-md-5">
+										<label for="formFileMultiple" class="form-label text-muted">Case Discreption</label>
+										<p>The Ministry of Interior Affairs should investigate the case of beating the reporter of Bakhtar Agency in Zabul.</p>
+									</div>
+									<div class="col-md-3 text-center">
+										<div class="p-1">
+											<div class="d-flex justify-content-center order-actions">
+												<div class="hover-text">
+													<a href="#" class="btn-show ms-1"><i class="fadeIn animated bx bx-link-alt"></i></a>
+												</div> <a href="#" class="ms-1 btn-edit"><i class="fadeIn animated bx bx-edit"></i></a> <a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-trash-alt"></i></a>
+											</div>
+										</div>
+									</div>
+						  </button>
+						</h2>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<div class="row case-title">
+											<div class="col-md-2 mb-3">
+												<h6>Name of Victom</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Case Discreption</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Previous threats</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Supporting documents</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Unofficial statements</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Committee Actions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Government actions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Actions of judicial institutions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Legal matters</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Conclusion of the case and its reasons</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="flush-headingThree">
+						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+							<div class="col-md-3">
+									<a href="javascript:;" class="list-group-item">
+										<div class="d-flex">
+											<div class="chat-user-online">
+												<img src="assets/images/avatars/avatar-2.png" class="rounded-circle" alt="" width="42" height="42">
+											</div>
+											<div class="flex-grow-1 ms-2">
+												<h6 class="mb-0 chat-title">Ibadullah</h6>
+												<p class="mb-0 chat-msg">Director of Committee</p>
+												<div class="chat-time">12/12/2022, 9:51 AM</div>
+											</div>
+											
+										</div>
+									</a>
+								</div>
+									<div class="col-md-5">
+										<label for="formFileMultiple" class="form-label text-muted">Case Discreption</label>
+										<p>The Ministry of Interior Affairs should investigate the case of beating the reporter of Bakhtar Agency in Zabul.</p>
+									</div>
+									<div class="col-md-3 text-center">
+										<div class="p-1">
+											<div class="d-flex justify-content-center order-actions">
+												<div class="hover-text">
+													<a href="#" class="btn-show ms-1"><i class="fadeIn animated bx bx-link-alt"></i></a>
+												</div> <a href="#" class="ms-1 btn-edit"><i class="fadeIn animated bx bx-edit"></i></a> <a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-trash-alt"></i></a>
+											</div>
+										</div>
+									</div>
+						  </button>
+						</h2>
+								<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+									<div class="accordion-body">
+										<div class="row case-title">
+											<div class="col-md-2 mb-3">
+												<h6>Name of Victom</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Case Discreption</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Previous threats</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Supporting documents</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Unofficial statements</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Committee Actions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Government actions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Actions of judicial institutions</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Legal matters</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+											<div class="col-md-2 mb-3">
+												<h6>Conclusion of the case and its reasons</h6>
+											</div>
+											<div class="col-md-1 mb-3">
+												<div class="font-22 d-flex justify-content-center">	
+													<div class="order-actions">  
+														<a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-link-alt"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-9 mb-3">
+												<p>Ahmadullah From Parwan Province</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2021. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="assets/plugins/chartjs/js/Chart.min.js"></script>
+	<script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
+	<script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+	<!--Morris JavaScript -->
+	<script src="assets/plugins/raphael/raphael-min.js"></script>
+	<script src="assets/plugins/morris/js/morris.js"></script>
+	<script src="assets/js/index2.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

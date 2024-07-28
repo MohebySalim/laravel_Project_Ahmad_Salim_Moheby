@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<title>Case Application and Registration System (CARS)</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text">Case Application and Registration System (CARS)</h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li>
+					<a href="index2.html" class="">
+						<div class="parent-icon"><i class='bx bx-home-circle'></i>
+						</div>
+						<div class="menu-title">Dashboard</div>
+					</a>
+				</li>
+				<li>
+					<a href="newcaseDetails.html" class="">
+						<div class="parent-icon"><i class='bx bx-right-arrow-alt'></i>
+						</div>
+						<div class="menu-title">New Case Details</div>
+					</a>
+				</li>
+				<li>
+					<a href="searchcase.html" class="">
+						<div class="parent-icon"><i class='bx bx-right-arrow-alt'></i>
+						</div>
+						<div class="menu-title">Search case</div>
+					</a>
+				</li>
+				
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+					<div class="search-bar flex-grow-1">
+						<div class="position-relative search-bar-box">
+							<input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
+							<span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
+						</div>
+					</div>
+					<div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center">
+							<li class="nav-item mobile-search-icon">
+								<a class="nav-link" href="#">	<i class='bx bx-search'></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+									<i class='bx bx-bell'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Notifications</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-notifications-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+												ago</span></h6>
+													<p class="msg-info">5 new user registered</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Notifications</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+									<i class='bx bx-comment'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Messages</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-message-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
+												ago</span></h6>
+													<p class="msg-info">The standard chunk of lorem</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Messages</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="user-box dropdown">
+						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+							<div class="user-info ps-3">
+								<p class="user-name mb-0">Ibadullah</p>
+								<p class="designattion mb-0">Web Designer</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
+							</li>
+							<li>
+								<div class="dropdown-divider mb-0"></div>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+					<div class="row">
+						<div class="row row-cols-1 row-cols-md-2 row-cols-xl-5">
+							<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0 text-secondary font-14">Total Cases</p>
+												<h5 class="my-0">80</h5>
+												<p class="mb-0 text-secondary font-14">New Cases: 30</p>
+												<p class="mb-0 text-secondary font-14">Old Cases: 50</p>
+											</div>
+											<div class="text-primary ms-auto font-30"><i class='bx bx-cart-alt'></i>
+											</div>
+										</div>
+									 </div>
+									<div class="mt-1" id="chart1"></div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0 text-secondary font-14">Murder</p>
+												<h5 class="my-0">70</h5>
+												<p class="mb-0 text-secondary font-14">Murder: 20</p>
+												<p class="mb-0 text-secondary font-14">Wounded: 50</p>
+											</div>
+											<div class="text-danger ms-auto font-30"><i class='bx bx-dollar' ></i>
+											</div>
+										</div>
+									</div>
+									<div class="mt-1" id="chart2"></div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0 text-secondary font-14">Abuse</p>
+												<h5 class="my-0">500</h5>
+												<p class="mb-0 text-secondary font-14">Abused: 300</p>
+												<p class="mb-0 text-secondary font-14">Beating: 200</p>
+											</div>
+											<div class="text-success ms-auto font-30"><i class='bx bx-group'></i>
+											</div>
+										</div>
+									</div>
+									<div class="mt-1" id="chart3"></div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0 text-secondary font-14">Threatning</p>
+												<h5 class="my-0">956</h5>
+												<p class="mb-0 text-secondary font-14">Threat: 556</p>
+												<p class="mb-0 text-secondary font-14">Detain: 400</p>
+											</div>
+											<div class="text-warning ms-auto font-30"><i class='bx bx-beer'></i>
+											</div>
+										</div>
+									</div>
+									<div class="mt-1" id="chart4"></div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card radius-10 overflow-hidden">
+									<div class="card-body">
+										<div class="d-flex align-items-center">
+											<div>
+												<p class="mb-0 text-secondary font-14">Dismissal</p>
+												<h5 class="my-0">120</h5>
+												<p class="mb-0 text-secondary font-14">Dismissal: 80</p>
+												<p class="mb-0 text-secondary font-14">Kidnaped: 40</p>
+											</div>
+											<div class="text-info ms-auto font-30"><i class='bx bx-camera-movie'></i>
+											</div>
+										</div>
+									</div>
+									<div class="mt-1" id="chart5"></div>
+								</div>
+							</div>
+						  </div><!--end row-->
+						<div class="col-12 col-lg-8">
+                            <div class="card radius-10">
+								<div class="card-body">
+								   <div class="d-flex align-items-center">
+									   <div>
+										   <h6 class="mb-0">Case graph based on different Case</h6>
+									   </div>
+									   <div class="dropdown ms-auto">
+										   <a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class='bx bx-dots-horizontal-rounded font-22 text-option'></i>
+										   </a>
+										   <ul class="dropdown-menu">
+											   <li><a class="dropdown-item" href="javascript:;">Action</a>
+											   </li>
+											   <li><a class="dropdown-item" href="javascript:;">Another action</a>
+											   </li>
+											   <li>
+												   <hr class="dropdown-divider">
+											   </li>
+											   <li><a class="dropdown-item" href="javascript:;">Something else here</a>
+											   </li>
+										   </ul>
+									   </div>
+								   </div>
+								 <div class="chart-container-0">
+								   <canvas id="chart7"></canvas>
+								</div>
+								</div>
+							 </div>
+						</div>
+						<div class="col-12 col-lg-4">
+                            <div class="card radius-10">
+								<div class="card-body">
+									<div class="d-flex align-items-center">
+										<div>
+											<h6 class="mb-0">Case base on Gender</h6>
+										</div>
+										<div class="dropdown ms-auto">
+											<a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class='bx bx-dots-horizontal-rounded font-22 text-option'></i>
+											</a>
+											<ul class="dropdown-menu">
+												<li><a class="dropdown-item" href="javascript:;">Action</a>
+												</li>
+												<li><a class="dropdown-item" href="javascript:;">Another action</a>
+												</li>
+												<li>
+													<hr class="dropdown-divider">
+												</li>
+												<li><a class="dropdown-item" href="javascript:;">Something else here</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="chart-container-0">
+										<canvas id="chartdiv"></canvas>
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div><!--end row-->
+				  <div class="row">
+					<div class="col-12 col-lg-8 col-xl-8">
+					  <div class="card radius-10">
+						<div class="card-header bg-transparent">
+							<div class="d-flex align-items-center">
+								<div>
+									<h6 class="mb-0">Case base on Category</h6>
+								</div>
+								<div class="dropdown ms-auto">
+									<a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class='bx bx-dots-horizontal-rounded font-22 text-option'></i>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="javascript:;">Action</a>
+										</li>
+										<li><a class="dropdown-item" href="javascript:;">Another action</a>
+										</li>
+										<li>
+											<hr class="dropdown-divider">
+										</li>
+										<li><a class="dropdown-item" href="javascript:;">Something else here</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						   </div>
+						 <div class="card-body">
+              <div class="chart-container-0">
+                  <canvas id="chart-order-status"></canvas>
+                </div>
+							
+							<hr>
+						 </div>
+					   </div>
+					</div>
+		   
+					<div class="col-12 col-lg-4 col-xl-4">
+						<div class="card radius-10">
+							<div class="card-header bg-transparent">
+								<div class="d-flex align-items-center">
+									<div>
+										<h6 class="mb-0">The case of violence based on year</h6>
+									</div>
+									<div class="dropdown ms-auto">
+										<a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class='bx bx-dots-horizontal-rounded font-22 text-option'></i>
+										</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="javascript:;">Action</a>
+											</li>
+											<li><a class="dropdown-item" href="javascript:;">Another action</a>
+											</li>
+											<li>
+												<hr class="dropdown-divider">
+											</li>
+											<li><a class="dropdown-item" href="javascript:;">Something else here</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							   </div>
+							<div class="card-body">
+							<canvas id="chart-order-horizontalBar" width="400" height="400"></canvas>
+
+						   </div>
+					   </div>
+					</div>
+				 </div><!--End Row-->
+				 
+				 
+				 <div class="card radius-10">
+					<div class="card-body">
+					   <div class="d-flex align-items-center">
+						   <div>
+							   <h6 class="mb-0">New Case</h6>
+						   </div>
+						   <div class="dropdown ms-auto">
+							   <a class="dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class="bx bx-dots-horizontal-rounded font-22 text-option"></i>
+							   </a>
+							   <ul class="dropdown-menu">
+								   <li><a class="dropdown-item" href="javascript:;">Action</a>
+								   </li>
+								   <li><a class="dropdown-item" href="javascript:;">Another action</a>
+								   </li>
+								   <li>
+									   <hr class="dropdown-divider">
+								   </li>
+								   <li><a class="dropdown-item" href="javascript:;">Something else here</a>
+								   </li>
+							   </ul>
+						   </div>
+					   </div>
+					<div class="table-responsive">
+					  <table class="table align-middle mb-0 text-center">
+					   <thead class="table-light">
+						<tr>
+						  <th>#</th>
+						  <th>Name</th>
+						  <th>Gender</th>
+						  <th>Province</th>
+						  <th>Case Type</th>
+						  <th>Request from Committee</th>
+						  <th>Action</th>
+						</tr>
+						</thead>
+						<tbody>
+						  <tr>
+							 <td>1</td>
+							 <td>Ahmad</td>
+							 <td>Male</td>
+							 <td>Parwan</td>
+							 <td>Murder</td>
+							 <td>Request from committee</td>
+							 <td>
+							 	<div role="group" class="p-1">
+								 	<div class="d-flex justify-content-center order-actions">
+								 		<a href="newcaseDetails.html" class="btn-show ms-1"><i class="fadeIn animated bx bx-show"></i></a> 
+								 		<a href="#" class="ms-1 btn-edit"><i class="fadeIn animated bx bx-edit"></i></a> <a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-trash-alt"></i></a>
+								 	</div>
+							 	</div>
+							 </td>
+						  </tr>
+						  <tr>
+							 <td>2</td>
+							 <td>Parween</td>
+							 <td>Female</td>
+							 <td>Balkh</td>
+							 <td>detain</td>
+							 <td>Request from committee</td>
+							 <td>
+							 	<div role="group" class="p-1">
+								 	<div class="d-flex justify-content-center order-actions">
+								 		<a href="#" class="btn-show ms-1"><i class="fadeIn animated bx bx-show"></i></a> 
+								 		<a href="#" class="ms-1 btn-edit"><i class="fadeIn animated bx bx-edit"></i></a> <a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-trash-alt"></i></a>
+								 	</div>
+							 	</div>
+							 </td>
+						  </tr>
+						  <tr>
+							 <td>3</td>
+							 <td>Mahmood</td>
+							 <td>Male</td>
+							 <td>Zabul</td>
+							 <td>Beating</td>
+							 <td>Request from committee</td>
+							 <td>
+							 	<div role="group" class="p-1">
+								 	<div class="d-flex justify-content-center order-actions">
+								 		<a href="#" class="btn-show ms-1"><i class="fadeIn animated bx bx-show"></i></a> 
+								 		<a href="#" class="ms-1 btn-edit"><i class="fadeIn animated bx bx-edit"></i></a> <a class="ms-1 btn-delete"><i class="fadeIn animated bx bx-trash-alt"></i></a>
+								 	</div>
+							 	</div>
+							 </td>
+						  </tr>
+					   </tbody>
+					 </table>
+					 </div>
+					</div>
+			   </div>
+
+			</div>
+		</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2021. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/chartjs/js/Chart.min.js"></script>
+	<script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
+	<script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+	<!--Morris JavaScript -->
+	<script src="assets/plugins/raphael/raphael-min.js"></script>
+	<script src="assets/plugins/morris/js/morris.js"></script>
+	<script src="assets/js/index2.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

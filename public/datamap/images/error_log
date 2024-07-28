@@ -1,0 +1,6 @@
+[15-Mar-2023 10:27:15 America/Chicago] PHP Warning:  include_once(connection.php): failed to open stream: No such file or directory in /home2/ajsc/datamapping.ajsc.af/images/index.php on line 3
+[15-Mar-2023 10:27:15 America/Chicago] PHP Warning:  include_once(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/ajsc/datamapping.ajsc.af/images/index.php on line 3
+[15-Mar-2023 10:27:15 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home2/ajsc/datamapping.ajsc.af/images/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home2/ajsc/datamapping.ajsc.af/images/index.php on line 5

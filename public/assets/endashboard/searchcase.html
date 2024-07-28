@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<!-- Bootstrap CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+	<link href="assets/css/app.css" rel="stylesheet">
+	<link href="assets/css/icons.css" rel="stylesheet">
+	<title>Case Application and Registration System (CARS)</title>
+</head>
+
+<body>
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--sidebar wrapper -->
+		<div class="sidebar-wrapper" data-simplebar="true">
+			<div class="sidebar-header">
+				<div>
+					<img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+				</div>
+				<div>
+					<h4 class="logo-text">Case Application and Registration System (CARS)</h4>
+				</div>
+				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+				</div>
+			</div>
+			<!--navigation-->
+			<ul class="metismenu" id="menu">
+				<li>
+					<a href="index2.html" class="">
+						<div class="parent-icon"><i class='bx bx-home-circle'></i>
+						</div>
+						<div class="menu-title">Dashboard</div>
+					</a>
+				</li>
+				<li>
+					<a href="newcaseDetails.html" class="">
+						<div class="parent-icon"><i class='bx bx-right-arrow-alt'></i>
+						</div>
+						<div class="menu-title">New Case Details</div>
+					</a>
+				</li>
+				<li>
+					<a href="searchcase.html" class="">
+						<div class="parent-icon"><i class='bx bx-right-arrow-alt'></i>
+						</div>
+						<div class="menu-title">Search case</div>
+					</a>
+				</li>
+				
+			</ul>
+			<!--end navigation-->
+		</div>
+		<!--end sidebar wrapper -->
+		<!--start header -->
+		<header>
+			<div class="topbar d-flex align-items-center">
+				<nav class="navbar navbar-expand">
+					<div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+					</div>
+					<div class="search-bar flex-grow-1">
+						<div class="position-relative search-bar-box">
+							<input type="text" class="form-control search-control" placeholder="Type to search..."> <span class="position-absolute top-50 search-show translate-middle-y"><i class='bx bx-search'></i></span>
+							<span class="position-absolute top-50 search-close translate-middle-y"><i class='bx bx-x'></i></span>
+						</div>
+					</div>
+					<div class="top-menu ms-auto">
+						<ul class="navbar-nav align-items-center">
+							<li class="nav-item mobile-search-icon">
+								<a class="nav-link" href="#">	<i class='bx bx-search'></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+									<i class='bx bx-bell'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Notifications</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-notifications-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="notify bg-light-primary text-primary"><i class="bx bx-group"></i>
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+												ago</span></h6>
+													<p class="msg-info">5 new user registered</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Notifications</div>
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-large">
+								<a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+									<i class='bx bx-comment'></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a href="javascript:;">
+										<div class="msg-header">
+											<p class="msg-header-title">Messages</p>
+											<p class="msg-header-clear ms-auto">Marks all as read</p>
+										</div>
+									</a>
+									<div class="header-message-list">
+										<a class="dropdown-item" href="javascript:;">
+											<div class="d-flex align-items-center">
+												<div class="user-online">
+													<img src="assets/images/avatars/avatar-1.png" class="msg-avatar" alt="user avatar">
+												</div>
+												<div class="flex-grow-1">
+													<h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
+												ago</span></h6>
+													<p class="msg-info">The standard chunk of lorem</p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<a href="javascript:;">
+										<div class="text-center msg-footer">View All Messages</div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="user-box dropdown">
+						<a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+							<div class="user-info ps-3">
+								<p class="user-name mb-0">Ibadullah</p>
+								<p class="designattion mb-0">Web Designer</p>
+							</div>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end">
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-user"></i><span>Profile</span></a>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings</span></a>
+							</li>
+							<li>
+								<div class="dropdown-divider mb-0"></div>
+							</li>
+							<li><a class="dropdown-item" href="javascript:;"><i class='bx bx-log-out-circle'></i><span>Logout</span></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--end header -->
+		<!--start page wrapper -->
+		<div class="page-wrapper">
+			<div class="page-content">
+				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+					<div class="breadcrumb-title pe-3">Home</div>
+					<div class="ps-3">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb mb-0 p-0">
+								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+								</li>
+								<li class="breadcrumb-item active" aria-current="page">Search based on case type</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<div class="card-title d-flex justify-content-between">
+							<h5 class="mb-0">Search based on case type</h5>
+							<button type="button" class="btn btn-primary px-4"><i class="fadeIn animated bx bx-import"></i> Primary</button>
+						</div>
+						<hr>
+						<form action="">
+							<div class="row">
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label">Gender:</label>
+									<select id="inputState" class="form-select">
+										<option selected="">Choose...</option>
+										<option>Male</option>
+										<option>Female</option>
+									</select>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label">Case Type:</label>
+									<select id="inputState" class="form-select">
+										<option selected="">Choose...</option>
+										<option>Murder</option>
+										<option>Wounded</option>
+										<option>Beating</option>
+										<option>Threat</option>
+										<option>Detain</option>
+										<option>Dismissal from duty</option>
+										<option>Abuse</option>
+										<option>Abduction</option>
+									</select>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label">Province:</label>
+									<select id="inputState" class="form-select">
+										<option selected="">Choose...</option>
+										<option>Kabul</option>
+										<option>Parwan</option>
+									</select>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputCity" class="form-label">From:</label>
+									<input type="date" class="form-control" id="inputCity">
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputCity" class="form-label">To:</label>
+									<input type="date" class="form-control" id="inputCity">
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label">Media Type:</label>
+									<select id="inputState" class="form-select">
+										<option selected="">Choose...</option>
+										<option>Print Media</option>
+										<option>Video</option>
+										<option>Radio</option>
+										<option>Freelance</option>
+										<option>Other</option>
+									</select>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label">Zone:</label>
+									<select id="inputState" class="form-select">
+										<option selected="">Choose...</option>
+										<option>....</option>
+										<option>....</option>
+										<option>....</option>
+										<option>....</option>
+										<option>....</option>
+										<option>....</option>
+									</select>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label">Case Perpetrators:</label>
+									<select id="inputState" class="form-select">
+										<option selected="">Choose...</option>
+										<option>Goverment</option>
+										<option>Local Malitia</option>
+										<option>IS</option>
+										<option>NRF</option>
+										<option>Other</option>
+									</select>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center mb-5 mt-3">
+								<button type="button" class="btn btn-primary px-4 text-center d-block"><i class="fadeIn animated bx bx-search"></i> Search</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- Search Result -->
+				<div class="card">
+					<div class="card-body">
+						<div class="card-title">
+							<h5 class="mb-0">Search Result</h5>
+						</div>
+						<hr>
+						<form action="" class="search-result">
+							<div class="row">
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label lab-al">Gender:</label>
+									<p>Male</p>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label lab-al">Case Type:</label>
+									<p>Murder</p>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label lab-al">Province:</label>
+									<p>Balkh</p>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputCity" class="form-label lab-al">From:</label>
+									<p>2020</p>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputCity" class="form-label lab-al">To:</label>
+									<p>2023</p>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label lab-al">Media Type:</label>
+									<p>Video</p>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label lab-al">Zone:</label>
+									<p>Kabul</p>
+								</div>
+								<div class="col-md-3 mb-4">
+									<label for="inputState" class="form-label lab-al">perpetrators of the Case:</label>
+									<p>Taliban</p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<!--end page wrapper -->
+		<!--start overlay-->
+		<div class="overlay toggle-icon"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2021. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<!--plugins-->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/chartjs/js/Chart.min.js"></script>
+	<script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
+	<script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+	<!--Morris JavaScript -->
+	<script src="assets/plugins/raphael/raphael-min.js"></script>
+	<script src="assets/plugins/morris/js/morris.js"></script>
+	<script src="assets/js/index2.js"></script>
+	<!--app JS-->
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

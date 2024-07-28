@@ -1,0 +1,21 @@
+// this is the configed mail
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=case@ajsc.af
+MAIL_PASSWORD=lunkpnxruuwqblft
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="case@ajsc.af"
+MAIL_FROM_NAME="${APP_NAME}"
+
+// this is for setup and need to be change
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=momp.af.momp@gmail.com
+MAIL_PASSWORD=gmsfpfjstchltjex
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="momp.af.momp@gmail.com"
+MAIL_FROM_NAME="${APP_NAME}"
